@@ -55,17 +55,12 @@ To get started with deploying your AKS cluster using Terraform, follow these ste
     ```bash
     az aks get-credentials --resource-group $(terraform output -raw resource_group_name) --name $(terraform output -raw kubernetes_cluster_name)
 
-9. **Access Kubernetes Cluster:** After the deployment is complete, access the kubernetes cluster dashboard using the following command:
+9. **Access Kubernetes Cluster Dashboard:** After the deployment is complete, access the kubernetes cluster dashboard using the following command:
 
     ```bash
     az aks browse --resource-group $(terraform output -raw resource_group_name) --name $(terraform output -raw kubernetes_cluster_name)
 
-10. **Deploy the database speed test application:** After the deployment is complete, deploy the database speed test application using the following command:
-
-    ```bash
-    kubectl apply -f ./speedtest.yaml
-
-11. **Terraform destroy:** Destroy the infrastructure you created:
+10. **Terraform destroy:** Destroy the infrastructure you created:
 
    ```bash
    terraform destroy
