@@ -30,7 +30,7 @@ variable "aks_node_vm_size" {
 
 variable "aks_node_pool_name" {
   type        = string
-  default     = "aks_node_pool"
+  default     = "default"
   description = "Name of the node pool in the AKS cluster"
 }
 
@@ -42,12 +42,12 @@ variable "aks_os_disk_size_gb" {
 
 variable "aks_service_principal_id" {
   type        = string
-  default     = "00000000-0000-0000-0000-000000000000"
+  default     = "a0a0a0a0-a0a0-a0a0-a0a0-a0a0a0a0a0a0"
   description = "Service principal ID for the AKS cluster"
 }
 
 variable "aks_service_principal_secret" {
   type        = string
-  default     = "00000000-0000-0000-0000-000000000000"
+  default     = "a0a0a0a0-a0a0-a0a0-a0a0-a0a0a0a0a0a0"
   description = "Service principal secret for the AKS cluster"
 }
