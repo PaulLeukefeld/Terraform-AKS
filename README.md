@@ -1,8 +1,9 @@
 # Infrastructure-as-Code AKS Portfolio Project
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/300px-Microsoft_Azure.svg.png" width="100" height="100" style="margin-right: 20px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Terraform_Logo.svg/600px-Terraform_Logo.svg.png" width="400" height="100" style="margin-right: 20px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/168px-Kubernetes_logo_without_workmark.svg.png" width="100" height="100">
+<div style="display: inline-block;">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/300px-Microsoft_Azure.svg.png" width="100" height="100" style="margin-right: 50px;">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Terraform_Logo.svg/600px-Terraform_Logo.svg.png" width="400" height="100">
+</div>
 
 Welcome to the Infrastructure-as-Code (IaC) AKS Portfolio Project! This repository demonstrates the power of Terraform in automating the deployment and management of Azure Kubernetes Service (AKS) clusters. By employing Infrastructure-as-Code principles, we simplify the process of creating and scaling container orchestration environments in the cloud.
 
