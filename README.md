@@ -76,13 +76,13 @@ To get started with deploying your AKS cluster using Terraform, follow these ste
 
    docker push <acrLoginServer>/azure-vote-front:v1
 
-3. **Update the manifest file**: Update the manifest file with the LoginServer address of the container registry.
+3. **Update the manifest file**: Update the manifest file with the LoginServer address of the container registry:
 
-```yaml
-containers:
-   - name: azure-vote-front
-      image: <acrLoginServer>/azuredocs/azure-vote-front:v1
-```
+   ```yaml
+   containers:
+      - name: azure-vote-front
+         image: <acrLoginServer>/azuredocs/azure-vote-front:v1
+   ```
 
 4. **Deploy the application to AKS cluster:** Deploy the application to the AKS cluster using the following command:
 
