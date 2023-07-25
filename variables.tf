@@ -42,12 +42,30 @@ variable "aks_os_disk_size_gb" {
 
 variable "aks_service_principal_id" {
   type        = string
-  default     = "a0a0a0a0-a0a0-a0a0-a0a0-a0a0a0a0a0a0"
+  default     = "your-service-principal-id"
   description = "Service principal ID for the AKS cluster"
 }
 
 variable "aks_service_principal_secret" {
   type        = string
-  default     = "a0a0a0a0-a0a0-a0a0-a0a0-a0a0a0a0a0a0"
+  default     = "your-service-principal-secret"
   description = "Service principal secret for the AKS cluster"
+}
+
+variable "acr_role_definition_name" {
+  type        = string
+  default     = "AcrPull"
+  description = "Name of the role definition for the ACR"
+}
+
+variable "container_registry_name" {
+  type        = string
+  default     = "your-container-registry-name"
+  description = "Name of the container registry"
+}
+
+variable "container_registry_sku" {
+  type        = string
+  default     = "Basic"
+  description = "SKU of the container registry"
 }
