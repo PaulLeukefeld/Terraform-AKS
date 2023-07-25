@@ -17,4 +17,12 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
   }
 
   role_based_access_control_enabled = true
+
+}
+
+resource "azurerm_role_assignment" "aks_sp_container_registry" {
+  scope                = azurerm_container_registry.acr.id
+  role_definition_name = var.acr_role_definition_name
+  principal_id         = var.aks_service_principal_id
+  skip_service_principal_aad_check = true
 }
